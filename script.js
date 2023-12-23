@@ -128,18 +128,22 @@ gsap.to("#main", {
     }
 })
 
-gsap.from("#aboutus .overlay-image, #aboutus #aboutusin", {
-    y:80,
-    opacity:0,
-    duration:1,
-    scrollTrigger:{
-        trigger:"#aboutus",
-        scroller:"body",
-        start:"top 65%",
-        end: "top 55%",
-        scrub:3
-    }
-})
+if (window.matchMedia("(min-width: 1024px)").matches) {
+  // Apply GSAP animation only for screens larger than 768px
+  gsap.from("#aboutus .overlay-image, #aboutus #aboutusin", {
+      y: 80,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+          trigger: "#aboutus",
+          scroller: "body",
+          start: "top 65%",
+          end: "top 55%",
+          scrub: 3
+      }
+  });
+}
+
 
 gsap.from("#page3 #col1, #page3 #col3",{
     y:-100,
