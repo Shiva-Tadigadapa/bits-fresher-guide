@@ -384,3 +384,5 @@ document.getElementById('page1').addEventListener('click', function () {
     behavior: 'smooth'
   });
 });
+
+

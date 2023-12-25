@@ -29,10 +29,12 @@
     box-sizing: border-box;
     font-family: 'montserrat';
     color: aliceblue;
+    scroll-behavior: smooth;
 }
 
 html,
 body {
+    scroll-behavior: smooth;
     width: 100%;
     height: 100%;
 }
