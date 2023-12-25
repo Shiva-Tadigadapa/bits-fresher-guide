@@ -158,10 +158,10 @@ video {
     z-index: -1;
 }
 
-#main {
+/* #main {
     position: relative;
     background-color: rgba(0, 0, 0, 0.303);
-}
+} */
 
 #page1 {
     height: 100vh;

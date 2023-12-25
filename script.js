@@ -116,7 +116,7 @@ gsap.to("#nav", {
   }
 })
 
-if (window.matchMedia("(min-width: 1024px)").matches) {
+if (window.matchMedia("(max-width: 1024px)").matches) {
 gsap.to("#main", {
   backgroundColor: "#000",
   scrollTrigger: {
@@ -129,6 +129,21 @@ gsap.to("#main", {
   }
 })
 }
+
+if (window.matchMedia("(max-width: 425px)").matches) {
+  gsap.to("#main", {
+    backgroundColor: "#000",
+    scrollTrigger: {
+      trigger: "#main",
+      scroller: "body",
+      // markers: true,
+      start: "top -20%",
+      end: "top -50%",
+      scrub: 1,
+    }
+  })
+}
+
 
 if (window.matchMedia("(min-width: 1024px)").matches) {
   // Apply GSAP animation only for screens larger than 768px
