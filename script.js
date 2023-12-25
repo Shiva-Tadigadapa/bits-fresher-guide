@@ -116,6 +116,7 @@ gsap.to("#nav", {
   }
 })
 
+if (window.matchMedia("(min-width: 1024px)").matches) {
 gsap.to("#main", {
   backgroundColor: "#000",
   scrollTrigger: {
@@ -127,6 +128,7 @@ gsap.to("#main", {
     scrub: 2,
   }
 })
+}
 
 if (window.matchMedia("(min-width: 1024px)").matches) {
   // Apply GSAP animation only for screens larger than 768px
@@ -174,6 +176,8 @@ if (window.matchMedia("(min-width: 1024px)").matches) {
   })
 }
 
+
+if (window.matchMedia("(min-width: 1024px)").matches) {
 gsap.from("#page4 h1", {
   y: 120,
   scrollTrigger: {
@@ -184,6 +188,7 @@ gsap.from("#page4 h1", {
     scrub: 3,
   }
 })
+}
 
 // Shery.mouseFollower({
 //     //Parameters are optional.
@@ -379,10 +384,10 @@ $(document).ready(function () {
 
 document.getElementById('page1').addEventListener('click', function () {
   // Scroll to the About Us section
-  window.scrollTo({
-    top: document.getElementById('scroller').offsetTop,
-    behavior: 'smooth'
+  console.log("moved");
+  document.getElementById('scroller').scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
   });
 });
-
 

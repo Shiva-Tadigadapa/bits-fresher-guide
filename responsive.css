@@ -72,14 +72,22 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        left: 40%;
-        /* transform: translateX(-50%); */
+        left: 50%;
+        transform: translateX(-50%);
         cursor: pointer;
         transition: all ease 0.5s;
     }
 
     #page1 .arrow:hover {
         background-color: rgb(255, 0, 81);
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+         left: 40%;
+        transform: translateX(-40%);
+        cursor: pointer;
+        transition: all ease 0.5s;
     }
 
     #page1 .arrow i {
