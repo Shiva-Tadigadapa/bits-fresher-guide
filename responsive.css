@@ -482,6 +482,116 @@
         overflow-x: hidden;
     }
     /* Other responsive styles */
+    #sansk-div {
+        margin-top: 100px;
+        height: 150px;
+        background-color: #ff9999;
+        /* background: linear-gradient(to bottom, #ff0051 0%, #ff9999 100%); */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        padding: 18px;
+        width: 100vw;
+        z-index: 9;
+    }
+
+    #sansk-div img {
+        height: 60px;
+        opacity: 0.4;
+    }
+
+    #sansk-div #adii img {
+        height: 60px;
+        opacity: 0.4;
+    }
+
+
+    #sansk-div p {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 900;
+        color: black;
+        line-height: 30px;
+        width: 65%;
+        letter-spacing: 0px;
+        font-family: punk-kid;
+        /* z-index: 8; */
+    }
+
+    
+    #page3 {
+        height: 650px;
+        width: 100%;
+        background-color: black;
+        margin-top: 0px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        position: relative;
+        margin-bottom: -50px;
+    }
+
+
+
+    
+    #para {
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        height: 50vh;
+    }
+
+    #para .Para {
+        font-size: 2.4vh;
+        font-weight: 600;
+        font-family: gilroy;
+    }
+
+    #para p {
+        padding: 0px 60px;
+        margin-bottom: 80px;
+        height: 30vh;
+        line-height: 20px;
+        font-size: 2vh;
+        font-weight: 200;
+        width: 100%;
+        text-align: center;
+        margin-left: 0vh;
+        text-transform: uppercase;
+    }
+
+    /* #para #a{
+        font-size: 1.7vh;
+        font-weight: 500;
+        font-family: gilroy;
+    } */
+
+    #page3 img {
+        position: absolute;
+        height: 60px;
+    }
+
+    #page3 #col1 {
+        left: 20%;
+        top: 10%;
+    }
+
+    #page3 #col3 {
+        left: 20.7%;
+        top: 10.7%;
+    }
+
+    #page3 #col2 {
+        right: 20%;
+        bottom: 40%;
+    }
+
+    #page3 #col4 {
+        right: 20.7%;
+        bottom: 40.7%;
+    }
+
 }
 
 /* Styles for larger screens */
