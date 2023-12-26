@@ -137,8 +137,9 @@ if (window.matchMedia("(max-width: 425px)").matches) {
       trigger: "#main",
       scroller: "body",
       // markers: true,
+      smoothChildTiming: true,
       start: "top -20%",
-      end: "top -50%",
+      end: "top -80%",
       scrub: 1,
     }
   })
@@ -165,11 +166,12 @@ if (window.matchMedia("(max-width: 425px)").matches) {
   // Apply GSAP animation only for screens larger than 768px
   gsap.from("#aboutus .overlay-image, #aboutus #aboutusin", {
     y: 80,
-    opacity: 1,
+    opacity: 0,
     duration: 1,
     scrollTrigger: {
       trigger: "#aboutus",
       scroller: "body",
+      smoothChildTiming: true,
       start: "top 65%",
       end: "top 55%",
       scrub: 2
