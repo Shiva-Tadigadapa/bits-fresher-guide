@@ -352,12 +352,12 @@
 
     #page3 #col2 {
         right: 20%;
-        bottom: 16%;
+        bottom: 20%;
     }
 
     #page3 #col4 {
         right: 20%;
-        bottom: 16%;
+        bottom: 20%;
     }
 
     /* Other responsive styles */
@@ -375,9 +375,9 @@
     }
 
     #page4 h1 {
-        font-size: 5.1vh;
+        font-size: 4.1vh;
         position: absolute;
-        padding: 0px 10px;
+        padding: 5px 10px;
         top: -8%;
         font-weight: 800;
         color: #000;
@@ -431,7 +431,6 @@
 
     #f1 img {
         height: 0vh;
-        ;
     }
 
 

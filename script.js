@@ -116,7 +116,7 @@ gsap.to("#nav", {
   }
 })
 
-if (window.matchMedia("(max-width: 1024px)").matches) {
+// if (window.matchMedia("(max-width: 1024px)").matches) {
 gsap.to("#main", {
   backgroundColor: "#000",
   scrollTrigger: {
@@ -128,7 +128,7 @@ gsap.to("#main", {
     scrub: 2,
   }
 })
-}
+// }
 
 if (window.matchMedia("(max-width: 425px)").matches) {
   gsap.to("#main", {
@@ -145,7 +145,7 @@ if (window.matchMedia("(max-width: 425px)").matches) {
 }
 
 
-if (window.matchMedia("(min-width: 1024px)").matches) {
+if (window.matchMedia("(min-width: 425px)").matches && window.matchMedia("(min-width: 1024px)").matches) {
   // Apply GSAP animation only for screens larger than 768px
   gsap.from("#aboutus .overlay-image, #aboutus #aboutusin", {
     y: 80,
@@ -160,6 +160,23 @@ if (window.matchMedia("(min-width: 1024px)").matches) {
     }
   });
 }
+
+if (window.matchMedia("(max-width: 425px)").matches) {
+  // Apply GSAP animation only for screens larger than 768px
+  gsap.from("#aboutus .overlay-image, #aboutus #aboutusin", {
+    y: 80,
+    opacity: 1,
+    duration: 1,
+    scrollTrigger: {
+      trigger: "#aboutus",
+      scroller: "body",
+      start: "top 65%",
+      end: "top 55%",
+      scrub: 2
+    }
+  });
+}
+
 
 if (window.matchMedia("(min-width: 1024px)").matches) {
   gsap.from("#page3 #col1, #page3 #col3", {
@@ -192,18 +209,20 @@ if (window.matchMedia("(min-width: 1024px)").matches) {
 }
 
 
-if (window.matchMedia("(min-width: 1024px)").matches) {
-gsap.from("#page4 h1", {
-  y: 120,
-  scrollTrigger: {
-    trigger: "#page4",
-    scroller: "body",
-    start: "top 65%",
-    end: "top 75%",
-    scrub: 3,
-  }
-})
+// Apply the animation for larger screen sizes
+if (window.matchMedia("(min-width: 425px)").matches && window.matchMedia("(min-width: 1024px)").matches) {
+  gsap.from("#page4 h1", {
+    y: 120,
+    scrollTrigger: {
+      trigger: "#page4",
+      scroller: "body",
+      start: "top 65%",
+      end: "top 75%",
+      scrub: 3,
+    }
+  });
 }
+
 
 // Shery.mouseFollower({
 //     //Parameters are optional.
