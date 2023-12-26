@@ -2,15 +2,15 @@
 /* Styles for smaller screens */
 @media only screen and (max-width: 768px) {
 
-    html,
-    body {
-        width: 100%;
+    html ,body  {
+        width: 100vw;
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */  box-sizing: border-box;
+     position:relative
     }
-
+    
     #nav {
         display: flex;
         width: 100dvw;
@@ -124,9 +124,11 @@
 
     .overlay-image-container {
         display: flex;
-        gap: 20px;
+        /* gap: 20px; */
+         width: 100%;
+        padding: 0px 20px;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: -10px;
     }
 
@@ -262,7 +264,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        overflow: hidden;
+        /* overflow: hidden; */
         padding: 18px;
         z-index: 9;
     }
@@ -479,7 +481,6 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
     }
     /* Other responsive styles */
     #sansk-div {
@@ -592,6 +593,117 @@
         bottom: 40.7%;
     }
 
+    #page4 {
+        height: 60vh;
+        width: 100%;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        /* gap: 3vh; */
+        position: relative;
+    }
+
+    #page4 h1 {
+        font-size: 8.1vh;
+        position: absolute;
+        padding: 5px 10px;
+        top: -15%;
+        font-weight: 800;
+        color: #000;
+        -webkit-text-stroke: 2px #fff;
+        font-family: gilroy;
+
+    }
+
+    .elem {
+        height: 50%;
+        width: 80%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .elem h2 {
+        height: 100%;
+        width: 100%;
+        /* background: linear-gradient(to bottom left, #ff0051 0%, #ff9999 100%); */
+        background-color: rgb(255, 0, 81);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: #000;
+        text-align: center;
+        font-size: 2.5vh;
+        font-weight: 800;
+        z-index: 100;
+        position: absolute;
+        transition: all ease 0.6s;
+
+    }
+    #aboutus {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        padding: 0%;
+        flex-direction: column;
+        gap: 0px;
+        align-items: normal;
+        justify-content: normal;
+        position: relative;
+        z-index: 999;
+        margin-top: 30px;
+    }
+
+    .overlay-image-container {
+        display: flex;
+        gap: 200px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -10px;
+    }
+
+    .overlay-image h4 {
+        font-size: 12px;
+    }
+
+    .overlay-image p {
+        font-size: x-small;
+    }
+
+    #aboutusin {
+        /* width: 100%; */
+        /* margin-top: 10px; */
+    }
+
+    #aboutusin h3 {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 800;
+        width: 100%;
+    }
+
+    .aboutuP p {
+        font-size: 15px;
+        line-height: 19px;
+        margin-top: 5rem;
+        position: relative;
+        top: 5rem;
+        padding: 0px 10px;
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+
+    #aboutus img {
+        width: 150px;
+        height: 90px;
+        border-radius: 10px;
+        /* object-fit: cover; */
+    }
 }
 
 /* Styles for larger screens */
@@ -600,6 +712,18 @@
     /* body {
         /* font-size: 180px; */
     /* }  */
+/* Hide horizontal overflow for the entire document */
+
+ html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+     position:relative
+}
+
 
     /* Other responsive styles */
+    
 }

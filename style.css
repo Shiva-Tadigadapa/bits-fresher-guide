@@ -37,6 +37,7 @@ body {
     scroll-behavior: smooth;
     width: 100%;
     height: 100%;
+
 }
 
 /* Add these styles for light mode */
@@ -302,10 +303,12 @@ video {
 .overlay-image-container {
     display: flex;
     margin-top: -2rem;
-    gap: 50rem;
+    width: 100%;
+    /* gap: 50rem; */
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: absolute;
+    padding: 0 55px;
     left: 50%;
     transform: translateX(-50%);
     /* background-color: red; */

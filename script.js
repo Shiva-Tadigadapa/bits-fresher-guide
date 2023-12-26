@@ -140,6 +140,7 @@ if (window.matchMedia("(max-width: 425px)").matches) {
       smoothChildTiming: true,
       start: "top -20%",
       end: "top -80%",
+
       scrub: 1,
     }
   })
